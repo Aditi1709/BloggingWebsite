@@ -1,6 +1,11 @@
+.title{
+    margin: 2rem 0;
+}
+
 .titlearea{
     max-height: 5em;
     width: 50%;
+    font-size: 1.2rem;
 }
 
 .ql-toolbar {

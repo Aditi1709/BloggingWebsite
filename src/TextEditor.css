@@ -1,3 +1,7 @@
+.editor{
+    margin: 1rem 0 2rem 0;
+}
+
 .editingarea{
     min-height: 40em;
     width: 50%;

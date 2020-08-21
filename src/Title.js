@@ -15,15 +15,22 @@ class Title extends Component {
     format ={
         
     }
+
+    shouldComponentUpdate(prevState, newState){
+        return prevState === newState
+    }
+
     handleChange(value) {
         this.setState({ text: value })
+        // console.log(this.state.text)
+        // console.log(e.target.value)
       }
     render() {
         return (
-            <div>
-            <ReactQuill theme="snow" placeholder="Title..." modules={this.modules} value={this.state.text} onChange={this.handleChange} >
-            <div className="titlearea"></div>
-            </ReactQuill>
+            <div className="title">
+                <ReactQuill theme="snow" placeholder="Title..."  modules={this.modules} value={this.state.text} onChange={this.handleChange} >
+                    <div className="titlearea"></div>
+                </ReactQuill>
             </div>
         );
     }
