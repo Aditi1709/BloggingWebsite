@@ -4,3 +4,23 @@
 .editor{
   align-items: center;
 }
+.verticalline{
+  height: 100%;
+  border-left: 2px solid blue;
+  position: absolute;
+  left:78%;
+}
+.rightside{
+  float:right;
+}
+textarea{
+  border: 1px solid #888; 
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+.notes{
+  padding-top: 30px;
+  padding-right: 20px;
+  border-radius: 2px;
+}

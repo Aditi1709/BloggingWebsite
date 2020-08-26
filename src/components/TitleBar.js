@@ -72,6 +72,7 @@ export default function SearchAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
+          <IconButton/>
           <Typography className={classes.title} variant="h6" noWrap>
             Name
           </Typography>

@@ -1,21 +1,21 @@
 import React from 'react';
-import TextEditor from './TextEditor.js'
-import TitleBar from './TitleBar.js'
-import Title from './Title.js'
-
-
+import TextEditor from './components/TextEditor.js'
+import TitleBar from './components/TitleBar.js'
+import './App.css'
+import Profile from './components/Profile.js';
+import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 function App() {
   return (
+    <Router>
       <div class="App">
       <TitleBar/>
-      <center>
-      <div class="editor">
-        <Title/>
-        <br></br>
-      <TextEditor/>
+      <Switch>
+      <Route path="/profile" component={Profile}></Route>
+      <Route path="/createblog" component={TextEditor}></Route>
+      </Switch>
       </div>
-      </center>
-      </div>
+    </Router>
+       
   );
 }
 
